@@ -8,7 +8,7 @@ const SITE_CONFIG = {
   contacts: {
     phone: "+7 (999) 123-45-67",
     phoneLink: "tel:+79991234567", 
-    address: "Вся Россия"
+    address: ""
   },
   links: {
     telegram: "https://t.me/arsius2000", 
@@ -363,7 +363,7 @@ const SITE_CONFIG = {
       tag: "Для родителей",
       title: "«Прическа за 15 минут»",
       description: "Практический урок для мам юных танцоров: как собрать гладкий пучок по регламенту Н/Е классов без страз, чем фиксировать и что положить в турнирный чемоданчик.",
-      image: "https://placehold.co/800x520/EBD8D0/2C2523?text=Master+Class",
+      image: "https://i.pinimg.com/736x/84/5f/df/845fdfec1f9c338e8d8c736bff40c127.jpg",
       time: "12 ноября, 14:00–16:00 (МСК)",
       speaker: "Анна Смирнова (Топ-мастер)",
       contactText: "Записаться в Telegram",
@@ -374,7 +374,7 @@ const SITE_CONFIG = {
       tag: "Для стилистов",
       title: "Курс «Сценический тон»",
       description: "Базовая подготовка стилиста к работе на турнирах: регламенты федераций, стойкость укладки на 8+ часов, техника крепления шпильками.",
-      image: "https://placehold.co/800x520/2C2523/FAF7F2?text=Stylist+Course",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS24luuHHHvca27xpZQJAG_-FigwFhEiBdkA1CWJu13M1qOJOaNnqL2YaA&s=10",
       time: "20–22 декабря, 10:00–18:00 (МСК)",
       speaker: "Мария Иванова (Премиум-мастер)",
       contactText: "Узнать подробности",

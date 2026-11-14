@@ -29,11 +29,11 @@
       </button>
       <div class="collapse navbar-collapse" id="mainNav">
         <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
-            <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
-            <li class="nav-item"><a class="nav-link" href="about.html">О нас</a></li>
-            <li class="nav-item"><a class="nav-link" href="services.html">Услуги и цены</a></li>
-            <li class="nav-item"><a class="nav-link active" href="tournaments.html">Турниры</a></li>
+            <li class="nav-item"><a class="nav-link " href="index.html">Главная</a></li>
             <li class="nav-item"><a class="nav-link" href="portfolio.html">Портфолио</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Услуги и цены</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">О нас</a></li>
+            <li class="nav-item"><a class="nav-link active" href="tournaments.html">Турниры</a></li>
           <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
             <a class="btn btn-gold w-100" href="booking.html"><i class="bi bi-calendar2-check me-1"></i>Записаться</a>
           </li>
@@ -54,7 +54,14 @@
     </div>
   </section>
 
-  <!-- ПОДВАЛ -->
+  <section class="cta-section">
+    <div class="container text-center">
+      <h2 class="cta-title">Готовы выйти на паркет?</h2>
+      <p class="cta-text">Забронируйте время прямо сейчас. Калькулятор рассчитает стоимость и время работы мастера.</p>
+      <a href="booking.html" class="btn btn-gold btn-lg px-5 py-3">Забронировать время</a>
+    </div>
+  </section>
+
   <footer class="site-footer">
     <div class="container">
             <div class="row g-4">
@@ -72,11 +79,10 @@
           <h4 class="footer-title">Разделы</h4>
           <ul class="footer-nav list-unstyled">
             <li><a href="index.html">Главная</a></li>
-            <li><a href="about.html">О нас</a></li>
-            <li><a href="services.html">Услуги и цены</a></li>
-            <li><a href="tournaments.html">Турниры</a></li>
             <li><a href="portfolio.html">Портфолио</a></li>
-            <li><a href="booking.html">Онлайн-запись</a></li>
+            <li><a href="services.html">Услуги и цены</a></li>
+            <li><a href="about.html">О нас</a></li>
+            <li><a href="tournaments.html">Турниры</a></li>
           </ul>
         </div>
 
@@ -94,15 +100,21 @@
         <div class="col-lg-3 col-md-6">
           <h4 class="footer-title">Контакты</h4>
           <ul class="footer-nav list-unstyled">
-            <li class="mb-2 d-flex align-items-center gap-2">
+
+            <!-- Место проведения -->
+            <li class="mb-2 d-flex align-items-start gap-2">
               <i class="bi bi-geo-alt text-gold"></i>
-              <span data-cfg-text="contacts.address">Москва и МО (выезд)</span>
+<span><a href="tournaments.html" data-cfg-href="contacts.venueLink"><span data-cfg-text="contacts.venueText">На месте турнира</span></a></span>
             </li>
             <li class="mb-2 d-flex align-items-center gap-2">
               <i class="bi bi-telephone text-gold"></i>
               <a href="#" data-cfg-href="contacts.phoneLink">
                 <span data-cfg-text="contacts.phone">+7 (999) 123-45-67</span>
               </a>
+            </li>
+            <li class="mb-2 d-flex align-items-start gap-2">
+              <i class="bi bi-clock text-gold mt-1"></i>
+              <span>Ежедневно с 04:00 до 00:00 (МСК)</span>
             </li>
             
             <!-- Перенесенные мессенджеры -->
@@ -115,6 +127,17 @@
               <a href="#" data-cfg-href="links.telegram" target="_blank" rel="noopener">Telegram</a>
             </li>
           </ul>
+        </div>
+      </div>
+                  <!-- Нижняя панель с копирайтом -->
+      <div class="footer-bottom">
+        <div class="row align-items-center">
+          <div class="col-md-6 text-center text-md-start">
+            <p class="mb-0">&copy; 2026 Имидж-студия «ПАРКЕТ». Все права защищены.</p>
+          </div>
+          <div class="col-md-6 text-center text-md-end mt-2 mt-md-0">
+            <p class="mb-0" style="font-size: 0.85rem; opacity: 0.6;">Сделано с любовью к бальным танцам</p>
+          </div>
         </div>
       </div>
   </footer>
