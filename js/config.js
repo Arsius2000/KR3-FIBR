@@ -108,7 +108,7 @@ const SITE_CONFIG = {
   ],
 
   // Календарь турниров (демо-данные)
-  tournaments: [
+tournaments: [
     { 
       id: "t1", 
       date: "2027-01-20", 
@@ -116,7 +116,8 @@ const SITE_CONFIG = {
       title: "Рождественский турнир", 
       city: "Санкт-Петербург", 
       venue: "Экспофорум",
-      mapLink: "https://yandex.ru/maps/?text=Санкт-Петербург%2C%20Экспофорум" 
+      mapLink: "https://yandex.ru/maps/?text=Санкт-Петербург%2C%20Экспофорум",
+      image: "https://placehold.co/600x400/EBD8D0/2C2523?text=Санкт-Петербург"
     },
     { 
       id: "t2", 
@@ -125,7 +126,8 @@ const SITE_CONFIG = {
       title: "Кубок Москвы", 
       city: "Москва", 
       venue: "Крокус Экспо",
-      mapLink: "https://yandex.ru/maps/?text=Москва%2C%20Крокус%20Экспо" 
+      mapLink: "https://yandex.ru/maps/?text=Москва%2C%20Крокус%20Экспо",
+      image: "https://placehold.co/600x400/EBD8D0/2C2523?text=Москва"
     },
     { 
       id: "t3", 
@@ -134,7 +136,8 @@ const SITE_CONFIG = {
       title: "Весенний бал", 
       city: "Москва", 
       venue: "Гостиный Двор",
-      mapLink: "https://yandex.ru/maps/?text=Москва%2C%20Гостиный%20Двор" 
+      mapLink: "https://yandex.ru/maps/?text=Москва%2C%20Гостиный%20Двор",
+      image: "https://placehold.co/600x400/EBD8D0/2C2523?text=Весенний+бал"
     },
     { 
       id: "t4", 
@@ -143,7 +146,8 @@ const SITE_CONFIG = {
       title: "Кубок Казани", 
       city: "Казань", 
       venue: "Kazan Expo",
-      mapLink: "https://yandex.ru/maps/?text=Казань%2C%20Kazan%20Expo" 
+      mapLink: "https://yandex.ru/maps/?text=Казань%2C%20Kazan%20Expo",
+      image: "https://placehold.co/600x400/EBD8D0/2C2523?text=Казань"
     },
     { 
       id: "t5", 
@@ -152,7 +156,8 @@ const SITE_CONFIG = {
       title: "Бал Авроры", 
       city: "Санкт-Петербург", 
       venue: "СКК Петербургский",
-      mapLink: "https://yandex.ru/maps/?text=Санкт-Петербург%2C%20СКК%20Петербургский" 
+      mapLink: "https://yandex.ru/maps/?text=Санкт-Петербург%2C%20СКК%20Петербургский",
+      image: "https://placehold.co/600x400/EBD8D0/2C2523?text=Бал+Авроры"
     },
     { 
       id: "t6", 
@@ -161,7 +166,8 @@ const SITE_CONFIG = {
       title: "Кубок Урала", 
       city: "Екатеринбург", 
       venue: "Екатеринбург-ЭКСПО",
-      mapLink: "https://yandex.ru/maps/?text=Екатеринбург%2C%20Екатеринбург-ЭКСПО" 
+      mapLink: "https://yandex.ru/maps/?text=Екатеринбург%2C%20Екатеринбург-ЭКСПО",
+      image: "https://placehold.co/600x400/EBD8D0/2C2523?text=Екатеринбург"
     },
     { 
       id: "t7", 
@@ -170,7 +176,8 @@ const SITE_CONFIG = {
       title: "Черноморская жемчужина", 
       city: "Сочи", 
       venue: "Дворец спорта «Большой»",
-      mapLink: "https://yandex.ru/maps/?text=Сочи%2C%20Дворец%20спорта%20Большой" 
+      mapLink: "https://yandex.ru/maps/?text=Сочи%2C%20Дворец%20спорта%20Большой",
+      image: "https://placehold.co/600x400/EBD8D0/2C2523?text=Сочи"
     },
     { 
       id: "t8", 
@@ -179,7 +186,8 @@ const SITE_CONFIG = {
       title: "Московские звезды", 
       city: "Москва", 
       venue: "Крокус Экспо",
-      mapLink: "https://yandex.ru/maps/?text=Москва%2C%20Крокус%20Экспо" 
+      mapLink: "https://yandex.ru/maps/?text=Москва%2C%20Крокус%20Экспо",
+      image: "https://placehold.co/600x400/EBD8D0/2C2523?text=Московские+звезды"
     },
     { 
       id: "t9", 
@@ -188,7 +196,8 @@ const SITE_CONFIG = {
       title: "Летний кубок", 
       city: "Нижний Новгород", 
       venue: "Нижегородская ярмарка",
-      mapLink: "https://yandex.ru/maps/?text=Нижний%20Новгород%2C%20Нижегородская%20ярмарка" 
+      mapLink: "https://yandex.ru/maps/?text=Нижний%20Новгород%2C%20Нижегородская%20ярмарка",
+      image: "https://placehold.co/600x400/EBD8D0/2C2523?text=Нижний+Новгород"
     },
     { 
       id: "t10", 
@@ -197,7 +206,8 @@ const SITE_CONFIG = {
       title: "Кубок Дона", 
       city: "Ростов-на-Дону", 
       venue: "Ростов Арена",
-      mapLink: "https://yandex.ru/maps/?text=Ростов-на-Дону%2C%20Ростов%20Арена" 
+      mapLink: "https://yandex.ru/maps/?text=Ростов-на-Дону%2C%20Ростов%20Арена",
+      image: "https://placehold.co/600x400/EBD8D0/2C2523?text=Ростов-на-Дону"
     },
     { 
       id: "t11", 
@@ -206,7 +216,8 @@ const SITE_CONFIG = {
       title: "Сибирский фестиваль", 
       city: "Новосибирск", 
       venue: "Новосибирск Экспоцентр",
-      mapLink: "https://yandex.ru/maps/?text=Новосибирск%2C%20Новосибирск%20Экспоцентр" 
+      mapLink: "https://yandex.ru/maps/?text=Новосибирск%2C%20Новосибирск%20Экспоцентр",
+      image: "https://placehold.co/600x400/EBD8D0/2C2523?text=Новосибирск"
     },
     { 
       id: "t12", 
@@ -215,7 +226,8 @@ const SITE_CONFIG = {
       title: "Золотая осень", 
       city: "Москва", 
       venue: "ВТБ Арена",
-      mapLink: "https://yandex.ru/maps/?text=Москва%2C%20ВТБ%20Арена" 
+      mapLink: "https://yandex.ru/maps/?text=Москва%2C%20ВТБ%20Арена",
+      image: "https://placehold.co/600x400/EBD8D0/2C2523?text=Золотая+осень"
     },
     { 
       id: "t13", 
@@ -224,7 +236,8 @@ const SITE_CONFIG = {
       title: "Кубок Балтики", 
       city: "Калининград", 
       venue: "Янтарь-Холл",
-      mapLink: "https://yandex.ru/maps/?text=Калининград%2C%20Янтарь-Холл" 
+      mapLink: "https://yandex.ru/maps/?text=Калининград%2C%20Янтарь-Холл",
+      image: "https://placehold.co/600x400/EBD8D0/2C2523?text=Калининград"
     },
     { 
       id: "t14", 
@@ -233,7 +246,8 @@ const SITE_CONFIG = {
       title: "Кубок Волги", 
       city: "Самара", 
       venue: "Самара Арена",
-      mapLink: "https://yandex.ru/maps/?text=Самара%2C%20Самара%20Арена" 
+      mapLink: "https://yandex.ru/maps/?text=Самара%2C%20Самара%20Арена",
+      image: "https://placehold.co/600x400/EBD8D0/2C2523?text=Самара"
     },
     { 
       id: "t15", 
@@ -242,7 +256,8 @@ const SITE_CONFIG = {
       title: "Северная Пальмира", 
       city: "Санкт-Петербург", 
       venue: "Экспофорум",
-      mapLink: "https://yandex.ru/maps/?text=Санкт-Петербург%2C%20Экспофорум" 
+      mapLink: "https://yandex.ru/maps/?text=Санкт-Петербург%2C%20Экспофорум",
+      image: "https://placehold.co/600x400/EBD8D0/2C2523?text=Северная+Пальмира"
     },
     { 
       id: "t16", 
@@ -251,7 +266,8 @@ const SITE_CONFIG = {
       title: "Гран-При Москвы", 
       city: "Москва", 
       venue: "Крокус Экспо",
-      mapLink: "https://yandex.ru/maps/?text=Москва%2C%20Крокус%20Экспо" 
+      mapLink: "https://yandex.ru/maps/?text=Москва%2C%20Крокус%20Экспо",
+      image: "https://placehold.co/600x400/EBD8D0/2C2523?text=Гран-При+Москвы"
     },
     { 
       id: "t17", 
@@ -260,10 +276,10 @@ const SITE_CONFIG = {
       title: "Новогодний бал", 
       city: "Москва", 
       venue: "Гостиный Двор",
-      mapLink: "https://yandex.ru/maps/?text=Москва%2C%20Гостиный%20Двор" 
+      mapLink: "https://yandex.ru/maps/?text=Москва%2C%20Гостиный%20Двор",
+      image: "https://placehold.co/600x400/EBD8D0/2C2523?text=Новогодний+бал"
     }
-  ],
-
+],
   // Портфолио 
   portfolio: [
     {
@@ -380,5 +396,15 @@ const SITE_CONFIG = {
       contactText: "Узнать подробности",
       contactLink: "https://wa.me/79991234567"
     }
-  ]
+  ],
+    // География выездов (для карты)
+  geography: [
+    { name: "Москва", lat: 55.7558, lng: 37.6173, info: "Более 200 турниров за 12 лет" },
+    { name: "Санкт-Петербург", lat: 59.9343, lng: 30.3351, info: "Кубок Балтики и Северная Пальмира" },
+    { name: "Казань", lat: 55.7887, lng: 49.1221, info: "Кубок Казани" },
+    { name: "Екатеринбург", lat: 56.8389, lng: 60.6057, info: "Кубок Урала" },
+    { name: "Сочи", lat: 43.5855, lng: 39.7231, info: "Черноморская жемчужина" },
+    { name: "Новосибирск", lat: 55.0084, lng: 82.9357, info: "Сибирский фестиваль" },
+    { name: "Калининград", lat: 54.7104, lng: 20.4522, info: "Кубок Балтики" }
+  ],
 };

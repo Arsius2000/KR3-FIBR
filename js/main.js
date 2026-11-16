@@ -80,12 +80,12 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // ==========================================
+    // ==========================================
   // 3. РЕНДЕР ТУРНИРОВ (index.html и tournaments.html)
   // ==========================================
   const tournamentList = document.getElementById('tournamentList');
   if (tournamentList) {
-    // Если мы на главной странице (index.html), показываем только 3 турнира. На tournaments.html — все.
+    // Проверяем, на главной ли мы странице (показываем 3 турнира). На tournaments.html — показываем все.
     const isHomePage = window.location.pathname.endsWith('index.html') || window.location.pathname === '/' || window.location.pathname === '';
     const tournamentsToShow = isHomePage ? SITE_CONFIG.tournaments.slice(0, 3) : SITE_CONFIG.tournaments;
 
@@ -94,24 +94,33 @@ document.addEventListener('DOMContentLoaded', () => {
       col.className = 'col-md-6 col-lg-4';
       const timeStr = t.time ? ` в ${t.time} (МСК)` : '';
       
+      // Ссылка на карту
       const mapUrl = t.mapLink;
       const locHtml = mapUrl 
         ? `<a href="${mapUrl}" target="_blank" rel="noopener" class="map-link" title="Открыть на карте">${t.city}, ${t.venue}</a>`
         : `${t.city}, ${t.venue}`;
       
+      // Формируем HTML для картинки (если она добавлена в конфиг)
+      const imageHtml = t.image 
+        ? `<img src="${t.image}" alt="${t.title}" class="tournament-image" loading="lazy">` 
+        : '';
+
       col.innerHTML = `
         <div class="tournament-card">
-          <div class="t-date">
-            <i class="bi bi-calendar-event me-1"></i>${t.date}${timeStr}
+          ${imageHtml}
+          <div class="tournament-content">
+            <div class="t-date">
+              <i class="bi bi-calendar-event me-1"></i>${t.date}${timeStr}
+            </div>
+            <h4 class="t-title">${t.title}</h4>
+            <div class="t-loc">
+              <i class="bi bi-geo-alt"></i> 
+              ${locHtml}
+            </div>
+            <button class="btn btn-outline-dark-soft w-100 btn-book-tour mt-auto" data-id="${t.id}" data-date="${t.date}">
+              Записаться на турнир
+            </button>
           </div>
-          <h4 class="t-title">${t.title}</h4>
-          <div class="t-loc">
-            <i class="bi bi-geo-alt"></i> 
-            ${locHtml}
-          </div>
-          <button class="btn btn-outline-dark-soft w-100 btn-book-tour" data-id="${t.id}" data-date="${t.date}">
-            Записаться на турнир
-          </button>
         </div>
       `;
       tournamentList.appendChild(col);
@@ -126,8 +135,7 @@ document.addEventListener('DOMContentLoaded', () => {
         window.location.href = `booking.html?tournament=${id}&date=${date}`;
       });
     });
-  }
-
+}
   // ==========================================
   // 4. ФИЛЬТРАЦИЯ И МОДАЛКА ПОРТФОЛИО (portfolio.html)
   // ==========================================
@@ -613,3 +621,19 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 });
+const mapContainer = document.getElementById('map');
+if (mapContainer && SITE_CONFIG.geography) {
+  const map = new maplibregl.Map({
+    container: 'map',
+    style: 'https://tiles.openfreemap.org/styles/bright ', // Светлый стиль
+    center: [105.3188, 61.5240], // Важно: [Долгота, Широта]
+    zoom: 2
+  });
+
+  SITE_CONFIG.geography.forEach(city => {
+    new maplibregl.Marker({ color: '#C5A059' }) // Ваш золотой цвет
+      .setLngLat([city.lng, city.lat]) // Важно: [Долгота, Широта]
+      .setPopup(new maplibregl.Popup().setHTML(`<b>${city.name}</b><p>${city.info}</p>`))
+      .addTo(map);
+  });
+}

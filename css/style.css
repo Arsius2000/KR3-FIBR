@@ -276,3 +276,67 @@ a:hover { color: var(--accent-gold-hover); }
   .footer-title, .footer-text, .footer-nav { text-align: center; }
   .footer-nav a:hover { transform: none; }
 }
+
+/* Интерактивная карта */
+#map {
+  height: 500px; /* Высота карты */
+  width: 100%;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border-color);
+  z-index: 1; /* Чтобы карта не перекрывала шапку сайта */
+}
+
+/* Кастомный маркер (иконка) */
+.custom-map-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--accent-gold);
+  font-size: 1.5rem;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+/* Стили для всплывающего окна (Popup) */
+.leaflet-popup-content-wrapper {
+  border-radius: var(--radius-sm);
+  font-family: var(--font-body);
+}
+.leaflet-popup-content {
+  margin: 12px 16px;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+}
+.leaflet-popup-content b {
+  color: var(--accent-gold);
+  font-size: 1.1rem;
+  display: block;
+  margin-bottom: 4px;
+  font-family: var(--font-headings);
+}
+
+@media (max-width: 767px) {
+  #map { height: 350px; } /* На телефонах карта чуть ниже */
+}
+
+/* Стили для карточки турнира с изображением */
+.tournament-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* Чтобы картинка не вылезала за скругленные углы */
+  padding: 0; /* Убираем внутренние отступы у самой карточки */
+}
+
+.tournament-image {
+  width: 100%;
+  height: 180px; /* Фиксированная высота для всех картинок */
+  object-fit: cover; /* Картинка заполняет блок, обрезаясь по краям */
+  border-bottom: 1px solid var(--border-color); /* Тонкая линия-разделитель */
+}
+
+.tournament-content {
+  padding: 24px; /* Возвращаем отступы для текстовой части */
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Чтобы кнопка всегда была прижата к низу */
+}
