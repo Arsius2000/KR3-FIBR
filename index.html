@@ -20,7 +20,7 @@
         <span class="brand-mark"><i class="bi bi-flower1"></i></span>
         <span class="brand-text">
           <span class="brand-title" data-cfg-text="brand.name">ПАРКЕТ</span>
-          <span class="brand-sub">имидж-студия</span>
+          <span class="brand-sub" data-i18n="brand_sub">имидж-студия</span>
         </span>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
@@ -28,13 +28,20 @@
       </button>
       <div class="collapse navbar-collapse" id="mainNav">
         <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
-            <li class="nav-item"><a class="nav-link active" href="index.html">Главная</a></li>
-            <li class="nav-item"><a class="nav-link" href="portfolio.html">Портфолио</a></li>
-            <li class="nav-item"><a class="nav-link" href="services.html">Услуги и цены</a></li>
-            <li class="nav-item"><a class="nav-link" href="about.html">О нас</a></li>
-            <li class="nav-item"><a class="nav-link" href="tournaments.html">Турниры</a></li>
-          <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
-            <a class="btn btn-gold w-100" href="booking.html"><i class="bi bi-calendar2-check me-1"></i>Записаться</a>
+            <li class="nav-item"><a class="nav-link active" href="index.html" data-i18n="nav_home">Главная</a></li>
+            <li class="nav-item"><a class="nav-link" href="portfolio.html" data-i18n="nav_portfolio">Портфолио</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html" data-i18n="nav_services">Услуги и цены</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html" data-i18n="nav_about">О нас</a></li>
+            <li class="nav-item"><a class="nav-link" href="tournaments.html" data-i18n="nav_tournaments">Турниры</a></li>
+                    <li class="nav-item me-lg-2 mt-3 mt-lg-0">
+  <label class="lang-switch" for="langToggle">
+    <input type="checkbox" id="langToggle">
+    <span class="lang-slider"></span>
+    <span class="lang-text lang-ru">RU</span>
+    <span class="lang-text lang-en">EN</span>
+  </label>
+</li><li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+            <a class="btn btn-gold w-100" href="booking.html"><i class="bi bi-calendar2-check me-1"></i><span data-i18n="nav_book">Записаться</span></a>
           </li>
         </ul>
       </div>
@@ -45,12 +52,12 @@
     <div class="container">
       <div class="row align-items-center g-5">
         <div class="col-lg-6">
-          <p class="eyebrow">ФТСАРР · РТС · выездная команда</p>
-          <h1 class="hero-title">Прически и макияж, которые держатся <em>все туры</em></h1>
-          <p class="hero-lead mb-4">Готовим спортсменов к выходу на паркет по жесткому таймингу турнира. Работаем в отеле, на выезде и прямо в гримерке на площадке.</p>
+          <p class="eyebrow" data-i18n="hero_eyebrow">ФТСАРР · РТС · выездная команда</p>
+          <h1 class="hero-title" data-i18n="hero_title">Прически и макияж, которые держатся <em>все туры</em></h1>
+          <p class="hero-lead mb-4" data-i18n="hero_lead">Готовим спортсменов к выходу на паркет по жесткому таймингу турнира. Работаем в отеле, на выезде и прямо в гримерке на площадке.</p>
           <div class="hero-actions">
-            <a href="booking.html" class="btn btn-gold btn-lg"><i class="bi bi-calendar2-check me-2"></i>Забронировать время</a>
-            <a href="portfolio.html" class="btn btn-outline-dark-soft btn-lg"><i class="bi bi-images me-2"></i>Смотреть работы</a>
+            <a href="booking.html" class="btn btn-gold btn-lg"><i class="bi bi-calendar2-check me-2"></i><span data-i18n="btn_book">Забронировать время</span></a>
+            <a href="portfolio.html" class="btn btn-outline-dark-soft btn-lg"><i class="bi bi-images me-2"></i><span data-i18n="btn_works">Смотреть работы</span></a>
           </div>
         </div>
         <div class="col-lg-6">
@@ -69,10 +76,10 @@
   <section class="trust-strip">
     <div class="container">
       <div class="row g-4 text-center">
-        <div class="col-6 col-lg-3"><div class="trust-item"><span class="trust-num">12</span><span class="trust-label">лет на паркете</span></div></div>
-        <div class="col-6 col-lg-3"><div class="trust-item"><span class="trust-num">480+</span><span class="trust-label">турниров</span></div></div>
-        <div class="col-6 col-lg-3"><div class="trust-item"><span class="trust-num">2 400+</span><span class="trust-label">собранных образов</span></div></div>
-        <div class="col-6 col-lg-3"><div class="trust-item"><span class="trust-num">45 мин</span><span class="trust-label">экспресс-сбор</span></div></div>
+        <div class="col-6 col-lg-3"><div class="trust-item"><span class="trust-num">12</span><span class="trust-label" data-i18n="trust_years">лет на паркете</span></div></div>
+        <div class="col-6 col-lg-3"><div class="trust-item"><span class="trust-num">480+</span><span class="trust-label" data-i18n="trust_tournaments">турниров</span></div></div>
+        <div class="col-6 col-lg-3"><div class="trust-item"><span class="trust-num">2 400+</span><span class="trust-label" data-i18n="trust_looks">собранных образов</span></div></div>
+        <div class="col-6 col-lg-3"><div class="trust-item"><span class="trust-num">45 мин</span><span class="trust-label" data-i18n="trust_fast">экспресс-сбор</span></div></div>
       </div>
     </div>
   </section>
@@ -80,73 +87,70 @@
   <section class="section bg-main">
     <div class="container">
       <div class="section-head text-center">
-        <h2 class="section-title">Почему выбирают нас</h2>
-        <p class="section-sub">Мы знаем все требования федераций и умеем работать в условиях цейтнота.</p>
+        <h2 class="section-title" data-i18n="why_title">Почему выбирают нас</h2>
+        <p class="section-sub" data-i18n="why_sub">Мы знаем все требования федераций и умеем работать в условиях цейтнота.</p>
       </div>
       
       <div class="row g-4">
         <div class="col-md-6 col-lg-3">
           <div class="advantage-card">
             <i class="bi bi-shield-check advantage-icon"></i>
-            <h4 class="advantage-title">Строго по регламенту</h4>
-            <p class="advantage-text">Соблюдаем правила ФТСАРР и РТС. Для детей Н/Е классов — без страз и декора.</p>
+            <h4 class="advantage-title" data-i18n="adv_rules">Строго по регламенту</h4>
+            <p class="advantage-text" data-i18n="adv_rules_text">Соблюдаем правила ФТСАРР и РТС. Для детей Н/Е классов — без страз и декора.</p>
           </div>
         </div>
         <div class="col-md-6 col-lg-3">
           <div class="advantage-card">
             <i class="bi bi-lightning-charge advantage-icon"></i>
-            <h4 class="advantage-title">Работа в 4 руки</h4>
-            <p class="advantage-text">Экспресс-сбор за 45 минут. Идеально, если расписание турнира сдвинулось.</p>
+            <h4 class="advantage-title" data-i18n="adv_hands">Работа в 4 руки</h4>
+            <p class="advantage-text" data-i18n="adv_hands_text">Экспресс-сбор за 45 минут. Идеально, если расписание турнира сдвинулось.</p>
           </div>
         </div>
         <div class="col-md-6 col-lg-3">
           <div class="advantage-card">
             <i class="bi bi-hourglass-split advantage-icon"></i>
-            <h4 class="advantage-title">Четкий тайминг</h4>
-            <p class="advantage-text">В прайсе указано точное время работы. Вы всегда знаете, когда будете готовы.</p>
+            <h4 class="advantage-title" data-i18n="adv_timing">Четкий тайминг</h4>
+            <p class="advantage-text" data-i18n="adv_timing_text">В прайсе указано точное время работы. Вы всегда знаете, когда будете готовы.</p>
           </div>
         </div>
         <div class="col-md-6 col-lg-3">
           <div class="advantage-card">
             <i class="bi bi-geo-alt advantage-icon"></i>
-            <h4 class="advantage-title">Выезд на турнир</h4>
-            <p class="advantage-text">Приезжаем в отель , чтобы сэкономить ваши силы.</p>
+            <h4 class="advantage-title" data-i18n="adv_travel">Выезд на турнир</h4>
+            <p class="advantage-text" data-i18n="adv_travel_text">Приезжаем в отель, чтобы сэкономить ваши силы.</p>
           </div>
         </div>
       </div>
       
       <div class="text-center mt-5">
-        <a href="services.html" class="btn btn-outline-dark-soft">Посмотреть полный список услуг</a>
+        <a href="services.html" class="btn btn-outline-dark-soft" data-i18n="btn_all_services">Посмотреть полный список услуг</a>
       </div>
     </div>
   </section>
-  <!-- БЛИЖАЙШИЕ ТУРНИРЫ НА ГЛАВНОЙ -->
+
   <section class="section section-alt">
     <div class="container">
-      <!-- Заголовок и кнопка в одну линию (flexbox) -->
       <div class="d-flex justify-content-between align-items-end mb-4 flex-wrap gap-3">
         <div>
-          <p class="eyebrow mb-2">Календарь</p>
-          <h2 class="section-title mb-0">Ближайшие турниры</h2>
+          <p class="eyebrow mb-2" data-i18n="calendar">Календарь</p>
+          <h2 class="section-title mb-0" data-i18n="upcoming">Ближайшие турниры</h2>
         </div>
         <a href="tournaments.html" class="btn btn-outline-dark-soft">
-          Смотреть все турниры <i class="bi bi-arrow-right ms-1"></i>
+          <span data-i18n="btn_all_tournaments">Смотреть все турниры</span> <i class="bi bi-arrow-right ms-1"></i>
         </a>
       </div>
-      
-      <!-- Сетка с карточками (скрипт сам вставит сюда ровно 3 штуки) -->
       <div class="row g-4" id="tournamentList"></div>
-      
     </div>
   </section>
+
   <section class="section bg-main">
     <div class="container">
       <div class="d-flex justify-content-between align-items-end mb-4 flex-wrap gap-3">
         <div>
-          <p class="eyebrow mb-2">Наши работы</p>
-          <h2 class="section-title mb-0">С паркета</h2>
+          <p class="eyebrow mb-2" data-i18n="our_works">Наши работы</p>
+          <h2 class="section-title mb-0" data-i18n="from_floor">С паркета</h2>
         </div>
-        <a href="portfolio.html" class="btn btn-outline-dark-soft">Смотреть все работы <i class="bi bi-arrow-right ms-1"></i></a>
+        <a href="portfolio.html" class="btn btn-outline-dark-soft"><span data-i18n="btn_all_works">Смотреть все работы</span> <i class="bi bi-arrow-right ms-1"></i></a>
       </div>
       
       <div class="row g-4">
@@ -171,68 +175,56 @@
 
   <section class="cta-section">
     <div class="container text-center">
-      <h2 class="cta-title">Готовы выйти на паркет?</h2>
-      <p class="cta-text">Забронируйте время прямо сейчас. Калькулятор рассчитает стоимость и время работы мастера.</p>
-      <a href="booking.html" class="btn btn-gold btn-lg px-5 py-3">Забронировать время</a>
+      <h2 class="cta-title" data-i18n="cta_title">Готовы выйти на паркет?</h2>
+      <p class="cta-text" data-i18n="cta_text">Забронируйте время прямо сейчас. Калькулятор рассчитает стоимость и время работы мастера.</p>
+      <a href="booking.html" class="btn btn-gold btn-lg px-5 py-3" data-i18n="btn_book">Забронировать время</a>
     </div>
   </section>
 
   <footer class="site-footer">
     <div class="container">
-            <div class="row g-4">
-        <!-- 1. Бренд -->
+      <div class="row g-4">
         <div class="col-lg-4 col-md-6">
           <div class="footer-brand d-flex align-items-center gap-2 mb-4">
             <span class="text-gold fs-3"><i class="bi bi-flower1"></i></span>
             <h4 class="footer-title mb-0" data-cfg-text="brand.name">ПАРКЕТ</h4>
           </div>
-          <p class="footer-text mb-4">Имидж-студия бальных причесок и сценического макияжа. Работаем по всей России и выезжаем на турниры.</p>
+          <p class="footer-text mb-4" data-i18n="footer_text">Имидж-студия бальных причесок и сценического макияжа. Работаем по всей России и выезжаем на турниры.</p>
         </div>
-
-        <!-- 2. Разделы -->
         <div class="col-lg-2 col-md-6 col-6">
-          <h4 class="footer-title">Разделы</h4>
+          <h4 class="footer-title" data-i18n="sections">Разделы</h4>
           <ul class="footer-nav list-unstyled">
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="portfolio.html">Портфолио</a></li>
-            <li><a href="services.html">Услуги и цены</a></li>
-            <li><a href="about.html">О нас</a></li>
-            <li><a href="tournaments.html">Турниры</a></li>
+            <li><a href="index.html" data-i18n="footer_home">Главная</a></li>
+            <li><a href="portfolio.html" data-i18n="footer_portfolio">Портфолио</a></li>
+            <li><a href="services.html" data-i18n="footer_services">Услуги и цены</a></li>
+            <li><a href="about.html" data-i18n="footer_about">О нас</a></li>
+            <li><a href="tournaments.html" data-i18n="footer_tournaments">Турниры</a></li>
+            <li><a href="booking.html" data-i18n="footer_booking">Онлайн-запись</a></li>
           </ul>
         </div>
-
-        <!-- 3. Информация -->
         <div class="col-lg-3 col-md-6 col-6">
-          <h4 class="footer-title">Информация</h4>
+          <h4 class="footer-title" data-i18n="information">Информация</h4>
           <ul class="footer-nav list-unstyled">
-            <li><a href="services.html#education">Обучение</a></li>
-            <li><a href="booking.html#faq">Памятка клиента</a></li>
-            <li><a href="#" data-bs-toggle="modal" data-bs-target="#privacyModal">Политика конфиденциальности</a></li>
+            <li><a href="services.html#education" data-i18n="education_link">Обучение</a></li>
+            <li><a href="booking.html#faq" data-i18n="client_note">Памятка клиента</a></li>
+            <li><a href="#" data-bs-toggle="modal" data-bs-target="#privacyModal" data-i18n="privacy_link">Политика конфиденциальности</a></li>
           </ul>
         </div>
-
-        <!-- 4. Контакты (Сюда перенесли мессенджеры) -->
         <div class="col-lg-3 col-md-6">
-          <h4 class="footer-title">Контакты</h4>
+          <h4 class="footer-title" data-i18n="contacts">Контакты</h4>
           <ul class="footer-nav list-unstyled">
-
-            <!-- Место проведения -->
             <li class="mb-2 d-flex align-items-start gap-2">
-              <i class="bi bi-geo-alt text-gold"></i>
-<span><a href="tournaments.html" data-cfg-href="contacts.venueLink"><span data-cfg-text="contacts.venueText">На месте турнира</span></a></span>
+              <i class="bi bi-geo-alt text-gold mt-1"></i>
+              <span><a href="#" data-cfg-href="contacts.venueLink"><span data-cfg-text="contacts.venueText" data-i18n="footer_venue">На месте турнира</span></a></span>
             </li>
             <li class="mb-2 d-flex align-items-center gap-2">
               <i class="bi bi-telephone text-gold"></i>
-              <a href="#" data-cfg-href="contacts.phoneLink">
-                <span data-cfg-text="contacts.phone">+7 (999) 123-45-67</span>
-              </a>
+              <a href="#" data-cfg-href="contacts.phoneLink"><span data-cfg-text="contacts.phone">+7 (999) 123-45-67</span></a>
             </li>
             <li class="mb-2 d-flex align-items-start gap-2">
               <i class="bi bi-clock text-gold mt-1"></i>
-              <span>Ежедневно с 04:00 до 00:00 (МСК)</span>
+              <span data-i18n="working_hours">Ежедневно с 04:00 до 00:00 (МСК)</span>
             </li>
-            
-            <!-- Перенесенные мессенджеры -->
             <li class="mb-2 d-flex align-items-center gap-2">
               <i class="bi bi-whatsapp text-gold"></i>
               <a href="#" data-cfg-href="links.whatsapp" target="_blank" rel="noopener">WhatsApp</a>
@@ -244,17 +236,17 @@
           </ul>
         </div>
       </div>
-                  <!-- Нижняя панель с копирайтом -->
       <div class="footer-bottom">
         <div class="row align-items-center">
           <div class="col-md-6 text-center text-md-start">
-            <p class="mb-0">&copy; 2026 Имидж-студия «ПАРКЕТ». Все права защищены.</p>
+            <p class="mb-0" data-i18n="copyright">&copy; 2026 Имидж-студия «ПАРКЕТ». Все права защищены.</p>
           </div>
           <div class="col-md-6 text-center text-md-end mt-2 mt-md-0">
-            <p class="mb-0" style="font-size: 0.85rem; opacity: 0.6;">Сделано с любовью к бальным танцам</p>
+            <p class="mb-0" style="font-size: 0.85rem; opacity: 0.6;"><span data-i18n="footer_love">Сделано с любовью к бальным танцам</span></p>
           </div>
         </div>
       </div>
+    </div>
   </footer>
 
   <div class="fab-container">
@@ -265,20 +257,20 @@
   <div class="modal fade" id="privacyModal" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-scrollable">
       <div class="modal-content">
-        <div class="modal-header"><h5 class="modal-title">Политика конфиденциальности</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+        <div class="modal-header"><h5 class="modal-title" data-i18n="privacy_title">Политика конфиденциальности</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
         <div class="modal-body" style="font-size: 0.95rem;">
           <p><strong>1. Общие положения</strong><br>Настоящая политика обработки персональных данных составлена в соответствии с требованиями Федерального закона от 27.07.2006 №152-ФЗ «О персональных данных».</p>
           <p><strong>2. Какие данные мы собираем</strong><br>Оставляя заявку на сайте, вы предоставляете нам: Имя, номер телефона.</p>
           <p><strong>3. Цели обработки данных</strong><br>Ваши данные используются исключительно для связи с вами с целью подтверждения записи.</p>
         </div>
-        <div class="modal-footer"><button type="button" class="btn btn-gold w-100" data-bs-dismiss="modal">Понятно</button></div>
+        <div class="modal-footer"><button type="button" class="btn btn-gold w-100" data-bs-dismiss="modal" data-i18n="understood">Понятно</button></div>
       </div>
     </div>
   </div>
 
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/config.js"></script>
+  <script src="js/lang.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
